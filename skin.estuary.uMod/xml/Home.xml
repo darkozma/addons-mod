@@ -145,7 +145,7 @@
 							<param name="widget_target" value="games"/>
 							<param name="list_id" value="46100"/>
 						</include>
-						</control>
+					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -153,7 +153,6 @@
 						<param name="button_id" value="46500"/>
 						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoGamesButton)"/>
 					</include>
-					</control>
 				</control>
 				<control type="group" id="47000">
 					<visible>String.IsEqual(Container(9000).ListItem.Property(id),pelismagnet)</visible>
