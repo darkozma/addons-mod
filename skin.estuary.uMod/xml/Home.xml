@@ -148,7 +148,7 @@
 						<include content="WidgetListChannels" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/radio/*?view=all"/>
 							<param name="widget_header" value="$LOCALIZE[46007]"/>
-							<param name="widget_target" value="games"/>
+							<param name="widget_target" value="radio"/>
 							<param name="list_id" value="46100"/>
 						</include>
 						</control>
