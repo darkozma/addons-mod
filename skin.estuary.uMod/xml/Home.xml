@@ -111,19 +111,25 @@
 					</include>
 					<control type="grouplist" id="45001">
 						<include>WidgetGroupListCommon</include>
+						<!-- include content="WidgetListCategories" condition="Library.HasContent(movies)">
+							<param name="content_path" value="plugin://script.extendedinfo/tmdb"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="45900"/>
+						</include -->
 						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
 							<param name="content_path" value="plugin://script.extendedinfo?info=popularmovies"/>
 							<param name="widget_header" value="$LOCALIZE[45005]"/>
-							<param name="widget_target" value="videoclub"/>
+							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="45100"/>
 						</include>
 						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
 							<param name="content_path" value="plugin://script.extendedinfo?info=populartvshows"/>
 							<param name="widget_header" value="$LOCALIZE[45006]"/>
-							<param name="widget_target" value="videoclub"/>
+							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="45200"/>
 						</include>
-					</control>
+						</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -145,7 +151,7 @@
 							<param name="widget_target" value="games"/>
 							<param name="list_id" value="46100"/>
 						</include>
-					</control>
+						</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
@@ -162,18 +168,26 @@
 					<control type="grouplist" id="47001">
 						<include>WidgetGroupListCommon</include>
 						<include content="WidgetListCategories" condition="Library.HasContent(movies)">
+							<!-- param name="content_path" value="plugin://plugin.video.pelisalacarta/?ewogICAgImFjdGlvbiI6ICJtYWlubGlzdCIsIAogICAgImNhdGVnb3J5IjogIlBlbGlzTWFnbmV0IiwgCiAgICAiY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgImNvbnRleHQiOiBbCiAgICAgICAgewogICAgICAgICAgICAiYWN0aW9uIjogImNoYW5uZWxfY29uZmlnIiwgCiAgICAgICAgICAgICJjaGFubmVsIjogImNvbmZpZ3VyYWNpb24iLCAKICAgICAgICAgICAgImNvbmZpZyI6ICJwZWxpc21hZ25ldCIsIAogICAgICAgICAgICAiZnJvbV9hY3Rpb24iOiAibWFpbmxpc3QiLCAKICAgICAgICAgICAgImZyb21fY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgICAgICAgICAidGl0bGUiOiAiQ29uZmlndXJhciBjYW5hbCIKICAgICAgICB9CiAgICBdLCAKICAgICJmYW5hcnQiOiAiIiwgCiAgICAiaW5mb0xhYmVscyI6IHt9LCAKICAgICJsYW5ndWFnZSI6ICJlcyIsIAogICAgInRodW1ibmFpbCI6ICJodHRwOi8vbWVkaWEudHZhbGFjYXJ0YS5pbmZvL3BlbGlzYWxhY2FydGEvc3F1YXJlcy9wZWxpc21hZ25ldC5wbmciLCAKICAgICJ0aXRsZSI6ICJQZWxpc01hZ25ldCIsIAogICAgInRvdGFsSXRlbXMiOiAwLCAKICAgICJ2aWV3bW9kZSI6ICJsaXN0Igp9"/ -->
 							<param name="content_path" value="plugin://plugin.video.pelisalacarta/?ewogICAgImFjdGlvbiI6ICJtYWlubGlzdCIsIAogICAgImNhdGVnb3J5IjogIlBlbGlzTWFnbmV0IiwgCiAgICAiY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgImNvbnRleHQiOiBbCiAgICAgICAgewogICAgICAgICAgICAiYWN0aW9uIjogImNoYW5uZWxfY29uZmlnIiwgCiAgICAgICAgICAgICJjaGFubmVsIjogImNvbmZpZ3VyYWNpb24iLCAKICAgICAgICAgICAgImNvbmZpZyI6ICJwZWxpc21hZ25ldCIsIAogICAgICAgICAgICAiZnJvbV9hY3Rpb24iOiAibWFpbmxpc3QiLCAKICAgICAgICAgICAgImZyb21fY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgICAgICAgICAidGl0bGUiOiAiQ29uZmlndXJhciBjYW5hbCIKICAgICAgICB9CiAgICBdLCAKICAgICJmYW5hcnQiOiAiIiwgCiAgICAiaW5mb0xhYmVscyI6IHt9LCAKICAgICJsYW5ndWFnZSI6ICJlcyIsIAogICAgInRodW1ibmFpbCI6ICJodHRwOi8vbWVkaWEudHZhbGFjYXJ0YS5pbmZvL3BlbGlzYWxhY2FydGEvc3F1YXJlcy9wZWxpc21hZ25ldC5wbmciLCAKICAgICJ0aXRsZSI6ICJQZWxpc01hZ25ldCIsIAogICAgInRvdGFsSXRlbXMiOiAwLCAKICAgICJ2aWV3bW9kZSI6ICJsaXN0Igp9&amp;"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
-							<param name="widget_target" value="pelismagnet"/>
+							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="47900"/>
 						</include>
 						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
+							<!-- param name="content_path" value="plugin://plugin.video.pelisalacarta/?ewogICAgImFjdGlvbiI6ICJwZWxpcyIsIAogICAgImNhdGVnb3J5IjogIlBlbGlzTWFnbmV0IiwgCiAgICAiY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgImZhbmFydCI6ICIiLCAKICAgICJpbmZvTGFiZWxzIjoge30sIAogICAgInRodW1ibmFpbCI6ICIiLCAKICAgICJ0aXRsZSI6ICIgICAgIEVzdHJlbm9zIiwgCiAgICAidG90YWxJdGVtcyI6IDAsIAogICAgInVybCI6ICJodHRwOi8vcGVsaXNtYWcubmV0L2FwaT9zb3J0X2J5PWRhdGVfYWRkZWQmcGFnZT0wIgp9&amp;reload=$INFO[Window(Home).Property(widgetreload)]"/ -->
 							<param name="content_path" value="plugin://plugin.video.pelisalacarta/?ewogICAgImFjdGlvbiI6ICJwZWxpcyIsIAogICAgImNhdGVnb3J5IjogIlBlbGlzTWFnbmV0IiwgCiAgICAiY2hhbm5lbCI6ICJwZWxpc21hZ25ldCIsIAogICAgImZhbmFydCI6ICIiLCAKICAgICJpbmZvTGFiZWxzIjoge30sIAogICAgInRodW1ibmFpbCI6ICIiLCAKICAgICJ0aXRsZSI6ICIgICAgIEVzdHJlbm9zIiwgCiAgICAidG90YWxJdGVtcyI6IDAsIAogICAgInVybCI6ICJodHRwOi8vcGVsaXNtYWcubmV0L2FwaT9zb3J0X2J5PWRhdGVfYWRkZWQmcGFnZT0wIgp9&amp;"/>
 							<param name="widget_header" value="$LOCALIZE[47009]"/>
-							<param name="widget_target" value="pelismagnet"/>
+							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="47100"/>
 						</include>
-					</control>
+						<include content="WidgetListPoster" condition="Library.HasContent(movies)">
+							<param name="content_path" value="plugin://plugin.video.pelisalacarta/?ewogICAgImFjdGlvbiI6ICJzZXJpZXMiLCAKICAgICJjYXRlZ29yeSI6ICJQZWxpc01hZ25ldCIsIAogICAgImNoYW5uZWwiOiAicGVsaXNtYWduZXQiLCAKICAgICJmYW5hcnQiOiAiIiwgCiAgICAiaW5mb0xhYmVscyI6IHt9LCAKICAgICJ0aHVtYm5haWwiOiAiIiwgCiAgICAidGl0bGUiOiAiICAgICArIFBvcHVsYXJlcyIsIAogICAgInRvdGFsSXRlbXMiOiAwLCAKICAgICJ1cmwiOiAiaHR0cDovL3BlbGlzbWFnLm5ldC9zZWFwaT9wYWdlPTAiCn0%3D&amp;"/>
+							<param name="widget_header" value="$LOCALIZE[47010]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="47200"/>
+						</include>
+						</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
